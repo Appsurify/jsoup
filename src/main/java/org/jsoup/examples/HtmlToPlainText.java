@@ -32,7 +32,7 @@ public class HtmlToPlainText {
     private static final int timeout = 5 * 1000;
 
     public static void main(String... args) throws IOException {
-        Validate.isTrue(args.length == 1 || args.length == 2, "usage: java -cp jsoup.jar org.jsoup.examples.HtmlToPlainText url [selector]");    
+        Validate.isTrue(args.length == 1 || args.length == 2, "usage: java -cp jsoup.jar org.jsoup.examples.HtmlToPlainText url [selector]");
         final String url = args[0];
         final String selector = args.length == 2 ? args[1] : null;
 
