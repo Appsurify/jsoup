@@ -258,7 +258,7 @@ public class HttpConnection implements Connection {
         for (Map.Entry<String,String> entry : headers.entrySet()) {
             req.header(entry.getKey(),entry.getValue());
         }
-        return this;
+        return this; 
     }
 
     public Connection cookie(String name, String value) {
