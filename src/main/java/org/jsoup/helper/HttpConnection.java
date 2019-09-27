@@ -824,7 +824,7 @@ public class HttpConnection implements Connection {
 
         public Document parse() throws IOException {
             Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before parsing response");
-            if (byteData != null) { // bytes have been read in to the buffer, parse that
+            if (byteData != null) { // bytes have been read in to the buffer, parse that 
                 bodyStream = new ByteArrayInputStream(byteData.array());
                 inputStreamRead = false; // ok to reparse if in bytes
             }
@@ -1101,7 +1101,7 @@ public class HttpConnection implements Connection {
                 .append(in.getAuthority()) // includes host, port
                 .append(in.getPath())
                 .append("?");
-            if (in.getQuery() != null) { 
+            if (in.getQuery() != null) {
                 url.append(in.getQuery());
                 first = false;
             }
