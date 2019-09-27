@@ -184,7 +184,7 @@ final class Tokeniser {
                     characterReferenceError(String.format("invalid named reference '%s'", nameRef));
                 return null;
             }
-            if (inAttribute && (reader.matchesLetter() || reader.matchesDigit() || reader.matchesAny('=', '-', '_'))) {
+            if (inAttribute && (reader.matchesLetter() || reader.matchesDigit() || reader.matchesAny('=', '-', '_'))) { 
                 // don't want that to match
                 reader.rewindToMark();
                 return null;
