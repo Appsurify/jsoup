@@ -196,7 +196,7 @@ public class HttpConnection implements Connection {
 
     public Connection data(String key, String filename, InputStream inputStream) {
         req.data(KeyVal.create(key, filename, inputStream));
-        return this;
+        return this; 
     }
 
     @Override
@@ -824,7 +824,7 @@ public class HttpConnection implements Connection {
 
         public Document parse() throws IOException {
             Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before parsing response");
-            if (byteData != null) { // bytes have been read in to the buffer, parse that 
+            if (byteData != null) { // bytes have been read in to the buffer, parse that
                 bodyStream = new ByteArrayInputStream(byteData.array());
                 inputStreamRead = false; // ok to reparse if in bytes
             }
