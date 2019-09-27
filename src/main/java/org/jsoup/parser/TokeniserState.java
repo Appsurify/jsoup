@@ -1084,7 +1084,7 @@ enum TokeniserState {
                     t.transition(Comment);
                     break;
                 case eof:
-                    t.eofError(this);
+                    t.eofError(this); 
                     t.emitCommentPending();
                     t.transition(Data);
                     break;
