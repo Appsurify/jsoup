@@ -303,7 +303,7 @@ public class Entities {
         ascii, utf, fallback;
 
         static CoreCharset byName(final String name) {
-            if (name.equals("US-ASCII"))
+            if (name.equals("US-ASCII")) 
                 return ascii;
             if (name.startsWith("UTF-")) // covers UTF-8, UTF-16, et al
                 return utf;
