@@ -1101,7 +1101,7 @@ public class HttpConnection implements Connection {
                 .append(in.getAuthority()) // includes host, port
                 .append(in.getPath())
                 .append("?");
-            if (in.getQuery() != null) {
+            if (in.getQuery() != null) { 
                 url.append(in.getQuery());
                 first = false;
             }
