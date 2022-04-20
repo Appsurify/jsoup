@@ -92,7 +92,7 @@ public class DocumentType extends LeafNode {
             accum.append(" ").append(attr(NAME));
         if (has(PUB_SYS_KEY))
             accum.append(" ").append(attr(PUB_SYS_KEY));
-        if (has(PUBLIC_ID))
+        if (has(PUBLIC_ID)) 
             accum.append(" \"").append(attr(PUBLIC_ID)).append('"');
         if (has(SYSTEM_ID))
             accum.append(" \"").append(attr(SYSTEM_ID)).append('"');

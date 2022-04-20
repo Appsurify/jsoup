@@ -60,7 +60,7 @@ public final class Validate {
      * @param msg message to output if validation fails
      */
     public static void isFalse(boolean val, String msg) {
-        if (val)
+        if (val) 
             throw new IllegalArgumentException(msg);
     }
 

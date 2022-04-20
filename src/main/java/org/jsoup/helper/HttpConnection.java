@@ -196,7 +196,7 @@ public class HttpConnection implements Connection {
 
     public Connection data(String key, String filename, InputStream inputStream) {
         req.data(KeyVal.create(key, filename, inputStream));
-        return this;
+        return this; 
     }
 
     @Override
