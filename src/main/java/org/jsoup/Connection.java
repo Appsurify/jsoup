@@ -56,7 +56,7 @@ public interface Connection {
     Connection url(URL url);
 
     /**
-     * Set the request URL to fetch. The protocol must be HTTP or HTTPS.
+     * Set the request URL to fetch. The protocol must be HTTP or HTTPS.  No real change just making a change to be picked up by our tool
      * @param url URL to connect to
      * @return this Connection, for chaining
      */
