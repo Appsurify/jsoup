@@ -49,7 +49,7 @@ public class HtmlToPlainText {
             }
         } else { // format the whole doc
             String plainText = formatter.getPlainText(doc);
-            System.out.println(plainText);
+            System.out.println(plainText); 
         }
     }
 
