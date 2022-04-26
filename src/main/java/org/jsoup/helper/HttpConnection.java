@@ -421,7 +421,7 @@ public class HttpConnection implements Connection {
                     return false;
                 }
 
-                while (i < end) {
+                while (i < end) { 
                     i++;
                     o = input[i];
                     if ((o & 0xC0) != 0x80) {
@@ -603,7 +603,7 @@ public class HttpConnection implements Connection {
         }
 
         public SSLSocketFactory sslSocketFactory() {
-            return sslSocketFactory; 
+            return sslSocketFactory;
         }
 
         public void sslSocketFactory(SSLSocketFactory sslSocketFactory) {
