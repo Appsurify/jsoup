@@ -79,7 +79,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
     private int indexOfKeyIgnoreCase(String key) {
         Validate.notNull(key);
         for (int i = 0; i < size; i++) {
-            if (key.equalsIgnoreCase(keys[i]))
+            if (key.equalsIgnoreCase(keys[i])) 
                 return i;
         }
         return NotFound;
