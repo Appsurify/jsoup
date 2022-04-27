@@ -149,7 +149,7 @@ public final class DataUtil {
                 foundCharset = foundCharset.trim().replaceAll("[\"']", "");
                 charsetName = foundCharset;
                 doc = null;
-            } else if (!fullyRead) { 
+            } else if (!fullyRead) {
                 doc = null;
             }
         } else { // specified by content type header (or by user on file load)
@@ -187,7 +187,7 @@ public final class DataUtil {
      * @throws IOException if an exception occurs whilst reading from the input stream.
      */
     public static ByteBuffer readToByteBuffer(InputStream inStream, int maxSize) throws IOException {
-        Validate.isTrue(maxSize >= 0, "maxSize must be 0 (unlimited) or larger");
+        Validate.isTrue(maxSize >= 0, "maxSize must be 0 (unlimited) or larger"); 
         final ConstrainableInputStream input = ConstrainableInputStream.wrap(inStream, bufferSize, maxSize);
         return input.readToByteBuffer(maxSize);
     }
