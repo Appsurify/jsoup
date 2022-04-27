@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
@@ -654,7 +654,7 @@ public abstract class Node implements Cloneable {
             Node currParent = nodesToProcess.remove();
 
             final int size = currParent.childNodeSize();
-            for (int i = 0; i < size; i++) { 
+            for (int i = 0; i < size; i++) {
                 final List<Node> childNodes = currParent.ensureChildNodes();
                 Node childClone = childNodes.get(i).doClone(currParent);
                 childNodes.set(i, childClone);
