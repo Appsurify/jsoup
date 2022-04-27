@@ -109,7 +109,7 @@ public abstract class Node implements Cloneable {
      * @return this (for chaining)
      */
     public Node removeAttr(String attributeKey) {
-        Validate.notNull(attributeKey);
+        Validate.notNull(attributeKey); 
         attributes().removeIgnoreCase(attributeKey);
         return this;
     }
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
