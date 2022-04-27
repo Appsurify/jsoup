@@ -574,7 +574,7 @@ public class HttpConnection implements Connection {
         }
 
         public Request timeout(int millis) {
-            Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater");
+            Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater"); 
             timeoutMilliseconds = millis;
             return this;
         }
@@ -990,7 +990,7 @@ public class HttpConnection implements Connection {
                         String cookieVal = cd.consumeTo(";").trim();
                         // ignores path, date, domain, validateTLSCertificates et al. req'd?
                         // name not blank, value not null
-                        if (cookieName.length() > 0) 
+                        if (cookieName.length() > 0)
                             cookie(cookieName, cookieVal);
                     }
                 }
