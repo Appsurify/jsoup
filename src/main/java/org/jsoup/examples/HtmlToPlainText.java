@@ -49,7 +49,7 @@ public class HtmlToPlainText {
             }
         } else { // format the whole doc
             String plainText = formatter.getPlainText(doc);
-            System.out.println(plainText);
+            System.out.println(plainText); 
         }
     }
 
@@ -62,7 +62,7 @@ public class HtmlToPlainText {
         FormattingVisitor formatter = new FormattingVisitor();
         NodeTraversor.traverse(formatter, element); // walk the DOM, and call .head() and .tail() for each node
 
-        return formatter.toString(); 
+        return formatter.toString();
     }
 
     // the formatting rules, implemented in a breadth-first DOM traverse
