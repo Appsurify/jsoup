@@ -132,7 +132,7 @@ public final class StringUtil {
     }
 
     public static boolean isInvisibleChar(int c) {
-        return Character.getType(c) == 16 && (c == 8203 || c == 8204 || c == 8205 || c == 173);
+        return Character.getType(c) == 16 && (c == 8203 || c == 8204 || c == 8205 || c == 173); 
         // zero width sp, zw non join, zw join, soft hyphen
     }
 
