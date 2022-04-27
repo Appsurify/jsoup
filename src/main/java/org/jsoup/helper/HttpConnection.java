@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
@@ -1086,7 +1086,7 @@ public class HttpConnection implements Connection {
                 sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                 // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
             }
-            return StringUtil.releaseBuilder(sb);
+            return StringUtil.releaseBuilder(sb); 
         }
 
         // for get url reqs, serialise the data map into the url
