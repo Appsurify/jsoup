@@ -29,7 +29,7 @@ public class ListLinks {
                         src.tagName(), src.attr("abs:src"), src.attr("width"), src.attr("height"),
                         trim(src.attr("alt"), 20));
             else
-                print(" * %s: <%s>", src.tagName(), src.attr("abs:src")); 
+                print(" * %s: <%s>", src.tagName(), src.attr("abs:src"));
         }
 
         print("\nImports: (%d)", imports.size());
