@@ -190,7 +190,7 @@ public class Document extends Element {
                     return found;
             }
         }
-        return null;
+        return null; 
     }
 
     @Override
