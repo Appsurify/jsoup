@@ -64,7 +64,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
         final String[] copy = new String[size];
         System.arraycopy(orig, 0, copy, 0,
                 Math.min(orig.length, size));
-        return copy;
+        return copy; 
     }
 
     int indexOfKey(String key) {
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this); 
+        return new Dataset(this);
     }
 
     /**
