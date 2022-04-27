@@ -22,7 +22,7 @@ public abstract class ChangeNotifyingArrayList<E> extends ArrayList<E> {
     @Override
     public boolean add(E e) {
         onContentsChanged();
-        return super.add(e);
+        return super.add(e); 
     }
 
     @Override
