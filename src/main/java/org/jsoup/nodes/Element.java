@@ -1317,7 +1317,7 @@ public class Element extends Node {
             return classAttr.regionMatches(true, start, className, 0, wantLen);
         }
 
-        return false; 
+        return false;
     }
 
     /**
