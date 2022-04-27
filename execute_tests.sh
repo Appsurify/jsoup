@@ -125,11 +125,11 @@ do
 	#echo "replacing .java file"
 	#echo "$dir/$jname" $completepath
 	#cp "$dir/$jname" $completepath
-	git revert HEAD --no-edit
 
 	
 	# replace the .class  or mvn clean install
 	cd $parentpath
+	git revert HEAD --no-edit
 	#mvn clean install
 	#/g/installations/maven/apache-maven-3.5.4-bin/apache-maven-3.5.4/bin/mvn clean install
 	
