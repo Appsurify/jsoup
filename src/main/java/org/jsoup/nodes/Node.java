@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
@@ -356,7 +356,7 @@ public abstract class Node implements Cloneable {
         deepest.addChildren(this);
 
         // remainder (unbalanced wrap, like <div></div><p></p> -- The <p> is remainder
-        if (wrapChildren.size() > 0) { 
+        if (wrapChildren.size() > 0) {
             //noinspection ForLoopReplaceableByForEach (beacause it allocates an Iterator which is wasteful here)
             for (int i = 0; i < wrapChildren.size(); i++) {
                 Node remainder = wrapChildren.get(i);
