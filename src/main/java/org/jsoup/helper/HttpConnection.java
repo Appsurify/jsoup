@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty"); 
+            Validate.notEmpty(name, "Cookie name must not be empty");
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -879,7 +879,7 @@ public class HttpConnection implements Connection {
             Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before getting response body");
             Validate.isFalse(inputStreamRead, "Request has already been read");
             inputStreamRead = true;
-            return ConstrainableInputStream.wrap(bodyStream, DataUtil.bufferSize, req.maxBodySize());
+            return ConstrainableInputStream.wrap(bodyStream, DataUtil.bufferSize, req.maxBodySize()); 
         }
 
         // set up connection defaults, and details from request
