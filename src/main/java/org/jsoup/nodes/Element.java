@@ -1096,7 +1096,7 @@ public class Element extends Node {
         final StringBuilder accum = StringUtil.borrowBuilder();
         NodeTraversor.traverse(new NodeVisitor() {
             public void head(Node node, int depth) {
-                if (node instanceof TextNode) { 
+                if (node instanceof TextNode) {
                     TextNode textNode = (TextNode) node;
                     accum.append(textNode.getWholeText());
                 }
@@ -1294,7 +1294,7 @@ public class Element extends Node {
         // otherwise, scan for whitespace and compare regions (with no string or arraylist allocations)
         boolean inClass = false;
         int start = 0;
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) { 
             if (Character.isWhitespace(classAttr.charAt(i))) {
                 if (inClass) {
                     // white space ends a class name, compare it with the requested one, ignore case
