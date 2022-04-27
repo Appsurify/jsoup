@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
@@ -337,7 +337,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      */
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true; 
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
         Attributes that = (Attributes) o;
