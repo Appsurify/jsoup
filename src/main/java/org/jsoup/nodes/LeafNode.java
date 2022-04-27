@@ -88,7 +88,7 @@ abstract class LeafNode extends Node {
 
     @Override
     public int childNodeSize() {
-        return 0; 
+        return 0;
     }
 
     @Override
