@@ -57,7 +57,7 @@ public class W3CDom {
      * @see org.jsoup.helper.W3CDom#fromJsoup(org.jsoup.nodes.Document)
      */
     public void convert(org.jsoup.nodes.Document in, Document out) {
-        if (!StringUtil.isBlank(in.location()))
+        if (!StringUtil.isBlank(in.location())) 
             out.setDocumentURI(in.location());
 
         org.jsoup.nodes.Element rootEl = in.child(0); // skip the #root node
