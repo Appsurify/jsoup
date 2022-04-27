@@ -117,7 +117,7 @@ public class Entities {
     public static String getByName(String name) {
         String val = multipoints.get(name);
         if (val != null)
-            return val;
+            return val; 
         int codepoint = extended.codepointForName(name);
         if (codepoint != empty)
             return new String(new int[]{codepoint}, 0, 1);
@@ -303,7 +303,7 @@ public class Entities {
         ascii, utf, fallback;
 
         static CoreCharset byName(final String name) {
-            if (name.equals("US-ASCII")) 
+            if (name.equals("US-ASCII"))
                 return ascii;
             if (name.startsWith("UTF-")) // covers UTF-8, UTF-16, et al
                 return utf;
