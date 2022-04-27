@@ -122,10 +122,11 @@ do
 	echo "-----Revert the java file------------"
 	
 	# Replace the .java file
-	echo "replacing .java file"
-	echo "$dir/$jname" $completepath
-	cp "$dir/$jname" $completepath
-	
+	#echo "replacing .java file"
+	#echo "$dir/$jname" $completepath
+	#cp "$dir/$jname" $completepath
+	git revert HEAD --no-edit
+
 	
 	# replace the .class  or mvn clean install
 	cd $parentpath
@@ -137,9 +138,9 @@ do
 	mvn test
 
 	# commit the code
-	git add -A
-	git status
-	git commit -m "revert mutant changes"
+	#git add -A
+	#git status
+	#git commit -m "revert mutant changes"
     git push
 	
 	commitId=`git log -n 1 | grep commit | cut -d " " -f2`

@@ -415,7 +415,7 @@ public class HttpConnection implements Connection {
                     end = i + 1;
                 } else if ((o & 0xF0) == 0xE0) {
                     end = i + 2;
-                } else if ((o & 0xF8) == 0xF0) { 
+                } else if ((o & 0xF8) == 0xF0) {
                     end = i + 3;
                 } else {
                     return false;
@@ -990,7 +990,7 @@ public class HttpConnection implements Connection {
                         String cookieVal = cd.consumeTo(";").trim();
                         // ignores path, date, domain, validateTLSCertificates et al. req'd?
                         // name not blank, value not null
-                        if (cookieName.length() > 0)
+                        if (cookieName.length() > 0) 
                             cookie(cookieName, cookieVal);
                     }
                 }
