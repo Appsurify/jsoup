@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty"); 
+            Validate.notEmpty(name, "Cookie name must not be empty");
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -753,7 +753,7 @@ public class HttpConnection implements Connection {
                     }
                     return execute(req, res);
                 }
-                if ((status < 200 || status >= 400) && !req.ignoreHttpErrors())
+                if ((status < 200 || status >= 400) && !req.ignoreHttpErrors()) 
                         throw new HttpStatusException("HTTP error fetching URL", status, req.url().toString());
 
                 // check that we can handle the returned content type; if not, abort before fetching it
