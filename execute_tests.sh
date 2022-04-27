@@ -130,6 +130,8 @@ do
 	
 	# replace the .class  or mvn clean install
 	cd $parentpath
+	CHDIR
+	git revert HEAD --no-edit
 	#mvn clean install
 	#/g/installations/maven/apache-maven-3.5.4-bin/apache-maven-3.5.4/bin/mvn clean install
 	
