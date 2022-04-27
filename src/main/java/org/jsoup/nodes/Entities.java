@@ -303,7 +303,7 @@ public class Entities {
         ascii, utf, fallback;
 
         static CoreCharset byName(final String name) {
-            if (name.equals("US-ASCII")) 
+            if (name.equals("US-ASCII"))
                 return ascii;
             if (name.startsWith("UTF-")) // covers UTF-8, UTF-16, et al
                 return utf;
@@ -347,7 +347,7 @@ public class Entities {
             if (cp2 != empty) {
                 multipoints.put(name, new String(new int[]{cp1, cp2}, 0, 2));
             }
-            i++;
+            i++; 
         }
 
         Validate.isTrue(i == size, "Unexpected count of entities loaded");
