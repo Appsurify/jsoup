@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this); 
+        return new Dataset(this);
     }
 
     /**
@@ -354,7 +354,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
     @Override
     public int hashCode() {
         int result = size;
-        result = 31 * result + Arrays.hashCode(keys);
+        result = 31 * result + Arrays.hashCode(keys); 
         result = 31 * result + Arrays.hashCode(vals);
         return result;
     }
