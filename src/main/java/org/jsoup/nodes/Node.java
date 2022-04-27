@@ -517,7 +517,7 @@ public abstract class Node implements Cloneable {
         if (parentNode == null)
             return null; // root
 
-        if (siblingIndex > 0) 
+        if (siblingIndex > 0)
             return parentNode.ensureChildNodes().get(siblingIndex-1);
         else
             return null;
@@ -713,7 +713,7 @@ public abstract class Node implements Cloneable {
         }
 
         public void tail(Node node, int depth) {
-            if (!node.nodeName().equals("#text")) { // saves a void hit.
+            if (!node.nodeName().equals("#text")) { // saves a void hit. 
 				try {
 					node.outerHtmlTail(accum, depth, out);
 				} catch (IOException exception) {
