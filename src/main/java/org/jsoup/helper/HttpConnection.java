@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty"); 
+            Validate.notEmpty(name, "Cookie name must not be empty");
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -903,7 +903,7 @@ public class HttpConnection implements Connection {
                 conn.addRequestProperty("Cookie", getRequestCookieString(req));
             for (Map.Entry<String, List<String>> header : req.multiHeaders().entrySet()) {
                 for (String value : header.getValue()) {
-                    conn.addRequestProperty(header.getKey(), value);
+                    conn.addRequestProperty(header.getKey(), value); 
                 }
             }
             return conn;
