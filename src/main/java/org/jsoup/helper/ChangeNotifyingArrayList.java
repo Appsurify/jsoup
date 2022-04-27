@@ -58,7 +58,7 @@ public abstract class ChangeNotifyingArrayList<E> extends ArrayList<E> {
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
         onContentsChanged();
-        return super.addAll(index, c);
+        return super.addAll(index, c); 
     }
 
     @Override
