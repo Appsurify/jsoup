@@ -252,7 +252,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
 
             @Override
             public boolean hasNext() {
-                return i < size;
+                return i < size; 
             }
 
             @Override
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this); 
+        return new Dataset(this);
     }
 
     /**
