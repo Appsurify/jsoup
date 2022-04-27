@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -516,7 +516,7 @@ public class HttpConnection implements Connection {
 
         public boolean hasCookie(String name) {
             Validate.notEmpty(name, "Cookie name must not be empty");
-            return cookies.containsKey(name); 
+            return cookies.containsKey(name);
         }
 
         public T removeCookie(String name) {
