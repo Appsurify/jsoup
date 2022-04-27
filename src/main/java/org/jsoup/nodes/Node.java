@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
@@ -713,7 +713,7 @@ public abstract class Node implements Cloneable {
         }
 
         public void tail(Node node, int depth) {
-            if (!node.nodeName().equals("#text")) { // saves a void hit.
+            if (!node.nodeName().equals("#text")) { // saves a void hit. 
 				try {
 					node.outerHtmlTail(accum, depth, out);
 				} catch (IOException exception) {
