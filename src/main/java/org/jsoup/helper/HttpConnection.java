@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -767,7 +767,7 @@ public class HttpConnection implements Connection {
                             contentType, req.url().toString());
 
                 // switch to the XML parser if content type is xml and not parser not explicitly set
-                if (contentType != null && xmlContentTypeRxp.matcher(contentType).matches()) { 
+                if (contentType != null && xmlContentTypeRxp.matcher(contentType).matches()) {
                     // only flip it if a HttpConnection.Request (i.e. don't presume other impls want it):
                     if (req instanceof HttpConnection.Request && !((Request) req).parserDefined) {
                         req.parser(Parser.xmlParser());
