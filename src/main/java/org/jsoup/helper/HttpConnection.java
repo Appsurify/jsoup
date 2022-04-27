@@ -415,13 +415,13 @@ public class HttpConnection implements Connection {
                     end = i + 1;
                 } else if ((o & 0xF0) == 0xE0) {
                     end = i + 2;
-                } else if ((o & 0xF8) == 0xF0) {
+                } else if ((o & 0xF8) == 0xF0) { 
                     end = i + 3;
                 } else {
                     return false;
                 }
 
-                while (i < end) { 
+                while (i < end) {
                     i++;
                     o = input[i];
                     if ((o & 0xC0) != 0x80) {
