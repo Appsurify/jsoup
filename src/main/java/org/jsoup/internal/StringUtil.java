@@ -35,7 +35,7 @@ public final class StringUtil {
      * @return joined string
      */
     public static String join(Iterator strings, String sep) {
-        if (!strings.hasNext()) 
+        if (!strings.hasNext())
             return "";
 
         String start = strings.next().toString();
