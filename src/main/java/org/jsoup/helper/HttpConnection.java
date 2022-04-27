@@ -574,7 +574,7 @@ public class HttpConnection implements Connection {
         }
 
         public Request timeout(int millis) {
-            Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater"); 
+            Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater");
             timeoutMilliseconds = millis;
             return this;
         }
@@ -865,7 +865,7 @@ public class HttpConnection implements Connection {
 
         public byte[] bodyAsBytes() {
             prepareByteData();
-            return byteData.array();
+            return byteData.array(); 
         }
 
         @Override
