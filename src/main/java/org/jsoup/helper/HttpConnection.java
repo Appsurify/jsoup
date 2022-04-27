@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty"); 
+            Validate.notEmpty(name, "Cookie name must not be empty");
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -655,7 +655,7 @@ public class HttpConnection implements Connection {
 
         public Connection.Request postDataCharset(String charset) {
             Validate.notNull(charset, "Charset must not be null");
-            if (!Charset.isSupported(charset)) throw new IllegalCharsetNameException(charset);
+            if (!Charset.isSupported(charset)) throw new IllegalCharsetNameException(charset); 
             this.postDataCharset = charset;
             return this;
         }
