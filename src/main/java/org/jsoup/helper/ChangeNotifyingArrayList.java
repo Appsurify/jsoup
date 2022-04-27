@@ -45,7 +45,7 @@ public abstract class ChangeNotifyingArrayList<E> extends ArrayList<E> {
 
     @Override
     public void clear() {
-        onContentsChanged(); 
+        onContentsChanged();
         super.clear();
     }
 
