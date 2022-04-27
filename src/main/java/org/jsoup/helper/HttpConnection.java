@@ -730,7 +730,7 @@ public class HttpConnection implements Connection {
 
                 int status = conn.getResponseCode();
                 res = new Response(previousResponse);
-                res.setupFromConnection(conn, previousResponse); 
+                res.setupFromConnection(conn, previousResponse);
                 res.req = req;
 
                 // redirect if there's a location header (from 3xx, or 201 etc)
@@ -1086,7 +1086,7 @@ public class HttpConnection implements Connection {
                 sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                 // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
             }
-            return StringUtil.releaseBuilder(sb);
+            return StringUtil.releaseBuilder(sb); 
         }
 
         // for get url reqs, serialise the data map into the url
