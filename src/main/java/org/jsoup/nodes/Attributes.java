@@ -210,7 +210,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      @return true if key exists, false otherwise
      */
     public boolean hasKey(String key) {
-        return indexOfKey(key) != NotFound; 
+        return indexOfKey(key) != NotFound;
     }
 
     /**
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
