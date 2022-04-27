@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -963,7 +963,7 @@ public class HttpConnection implements Connection {
                 if (key == null || val == null)
                     continue; // skip http1.1 line
 
-                if (headers.containsKey(key)) 
+                if (headers.containsKey(key))
                     headers.get(key).add(val);
                 else {
                     final ArrayList<String> vals = new ArrayList<>();
