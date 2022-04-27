@@ -62,7 +62,7 @@ public class Entities {
             if (index >= 0) {
                 // the results are ordered so lower case versions of same codepoint come after uppercase, and we prefer to emit lower
                 // (and binary search for same item with multi results is undefined
-                return (index < nameVals.length - 1 && codeKeys[index + 1] == codepoint) ?
+                return (index < nameVals.length - 1 && codeKeys[index + 1] == codepoint) ? 
                     nameVals[index + 1] : nameVals[index];
             }
             return emptyName;
@@ -303,7 +303,7 @@ public class Entities {
         ascii, utf, fallback;
 
         static CoreCharset byName(final String name) {
-            if (name.equals("US-ASCII")) 
+            if (name.equals("US-ASCII"))
                 return ascii;
             if (name.startsWith("UTF-")) // covers UTF-8, UTF-16, et al
                 return utf;
