@@ -61,7 +61,7 @@ public abstract class Node implements Cloneable {
             return EmptyString;
 
         String val = attributes().getIgnoreCase(attributeKey);
-        if (val.length() > 0) 
+        if (val.length() > 0)
             return val;
         else if (attributeKey.startsWith("abs:"))
             return absUrl(attributeKey.substring("abs:".length()));
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
