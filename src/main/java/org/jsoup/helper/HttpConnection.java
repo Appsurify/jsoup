@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty"); 
+            Validate.notEmpty(name, "Cookie name must not be empty");
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -1086,7 +1086,7 @@ public class HttpConnection implements Connection {
                 sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                 // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
             }
-            return StringUtil.releaseBuilder(sb);
+            return StringUtil.releaseBuilder(sb); 
         }
 
         // for get url reqs, serialise the data map into the url
