@@ -254,7 +254,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection headers(Map<String,String> headers) {
-        Validate.notNull(headers, "Header map must not be null"); 
+        Validate.notNull(headers, "Header map must not be null");
         for (Map.Entry<String,String> entry : headers.entrySet()) {
             req.header(entry.getKey(),entry.getValue());
         }
@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
