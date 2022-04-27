@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
@@ -310,7 +310,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
 
     final void html(final Appendable accum, final Document.OutputSettings out) throws IOException {
         final int sz = size;
-        for (int i = 0; i < sz; i++) { 
+        for (int i = 0; i < sz; i++) {
             // inlined from Attribute.html()
             final String key = keys[i];
             final String val = vals[i];
