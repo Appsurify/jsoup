@@ -352,7 +352,7 @@ public class HttpConnection implements Connection {
         }
 
         public String header(String name) {
-            Validate.notNull(name, "Header name must not be null"); 
+            Validate.notNull(name, "Header name must not be null");
             List<String> vals = getHeadersCaseInsensitive(name);
             if (vals.size() > 0) {
                 // https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
