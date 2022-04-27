@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -1067,7 +1067,7 @@ public class HttpConnection implements Connection {
                     else
                         first = false;
 
-                    w.write(URLEncoder.encode(keyVal.key(), req.postDataCharset())); 
+                    w.write(URLEncoder.encode(keyVal.key(), req.postDataCharset()));
                     w.write('=');
                     w.write(URLEncoder.encode(keyVal.value(), req.postDataCharset()));
                 }
