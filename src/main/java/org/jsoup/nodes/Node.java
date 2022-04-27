@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
@@ -601,7 +601,7 @@ public abstract class Node implements Cloneable {
      * @see #outerHtml()
      */
 	public String toString() {
-        return outerHtml();
+        return outerHtml(); 
     }
 
     protected void indent(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
