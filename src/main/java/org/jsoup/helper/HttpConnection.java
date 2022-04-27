@@ -516,7 +516,7 @@ public class HttpConnection implements Connection {
 
         public boolean hasCookie(String name) {
             Validate.notEmpty(name, "Cookie name must not be empty");
-            return cookies.containsKey(name);
+            return cookies.containsKey(name); 
         }
 
         public T removeCookie(String name) {
@@ -865,7 +865,7 @@ public class HttpConnection implements Connection {
 
         public byte[] bodyAsBytes() {
             prepareByteData();
-            return byteData.array(); 
+            return byteData.array();
         }
 
         @Override
