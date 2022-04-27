@@ -49,7 +49,7 @@ public class HtmlToPlainText {
             }
         } else { // format the whole doc
             String plainText = formatter.getPlainText(doc);
-            System.out.println(plainText);
+            System.out.println(plainText); 
         }
     }
 
@@ -77,7 +77,7 @@ public class HtmlToPlainText {
             if (node instanceof TextNode)
                 append(((TextNode) node).text()); // TextNodes carry all user-readable text in the DOM.
             else if (name.equals("li"))
-                append("\n * "); 
+                append("\n * ");
             else if (name.equals("dt"))
                 append("  ");
             else if (StringUtil.in(name, "p", "h1", "h2", "h3", "h4", "h5", "tr"))
