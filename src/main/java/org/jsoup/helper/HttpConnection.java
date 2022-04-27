@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
@@ -734,7 +734,7 @@ public class HttpConnection implements Connection {
                 res.req = req;
 
                 // redirect if there's a location header (from 3xx, or 201 etc)
-                if (res.hasHeader(LOCATION) && req.followRedirects()) {
+                if (res.hasHeader(LOCATION) && req.followRedirects()) { 
                     if (status != HTTP_TEMP_REDIR) {
                         req.method(Method.GET); // always redirect with a get. any data param from original req are dropped.
                         req.data().clear();
