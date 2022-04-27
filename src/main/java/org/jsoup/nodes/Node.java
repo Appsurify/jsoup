@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
@@ -617,7 +617,7 @@ public abstract class Node implements Cloneable {
     @Override
     public boolean equals(Object o) {
         // implemented just so that javadoc is clear this is an identity test
-        return this == o; 
+        return this == o;
     }
 
     /**
