@@ -122,7 +122,7 @@ public abstract class Node implements Cloneable {
         Iterator<Attribute> it = attributes().iterator();
         while (it.hasNext()) {
             it.next();
-            it.remove();
+            it.remove(); 
         }
         return this;
     }
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
