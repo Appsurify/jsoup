@@ -614,7 +614,7 @@ public class Element extends Node {
      */
     public Element empty() {
         childNodes.clear();
-        return this; 
+        return this;
     }
 
     /**
