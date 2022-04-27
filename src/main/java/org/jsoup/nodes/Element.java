@@ -1057,7 +1057,7 @@ public class Element extends Node {
      */
     public String text() {
         final StringBuilder accum = StringUtil.borrowBuilder();
-        NodeTraversor.traverse(new NodeVisitor() { 
+        NodeTraversor.traverse(new NodeVisitor() {
             public void head(Node node, int depth) {
                 if (node instanceof TextNode) {
                     TextNode textNode = (TextNode) node;
