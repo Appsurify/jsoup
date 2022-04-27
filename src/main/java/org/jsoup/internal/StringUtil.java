@@ -39,7 +39,7 @@ public final class StringUtil {
             return "";
 
         String start = strings.next().toString();
-        if (!strings.hasNext()) // only one, avoid builder 
+        if (!strings.hasNext()) // only one, avoid builder
             return start;
 
         StringBuilder sb = StringUtil.borrowBuilder().append(start);
