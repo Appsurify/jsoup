@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
@@ -518,7 +518,7 @@ public abstract class Node implements Cloneable {
             return null; // root
 
         if (siblingIndex > 0)
-            return parentNode.ensureChildNodes().get(siblingIndex-1); 
+            return parentNode.ensureChildNodes().get(siblingIndex-1);
         else
             return null;
     }
