@@ -131,7 +131,7 @@ public class Document extends Element {
         normaliseTextNodes(this);
 
         normaliseStructure("head", htmlEl);
-        normaliseStructure("body", htmlEl);
+        normaliseStructure("body", htmlEl); 
         
         ensureMetaCharsetElement();
         
