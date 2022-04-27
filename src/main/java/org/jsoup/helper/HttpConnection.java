@@ -570,7 +570,7 @@ public class HttpConnection implements Connection {
         }
 
         public int timeout() {
-            return timeoutMilliseconds;
+            return timeoutMilliseconds; 
         }
 
         public Request timeout(int millis) {
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
