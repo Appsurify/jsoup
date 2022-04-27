@@ -88,7 +88,7 @@ public final class ConstrainableInputStream extends BufferedInputStream {
             if (read == -1) break;
             if (localCapped) { // this local byteBuffer cap may be smaller than the overall maxSize (like when reading first bytes)
                 if (read >= remaining) {
-                    outStream.write(readBuffer, 0, remaining);
+                    outStream.write(readBuffer, 0, remaining); 
                     break;
                 }
                 remaining -= read;
