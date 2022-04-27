@@ -477,7 +477,7 @@ public class Element extends Node {
     public Element insertChildren(int index, Node... children) {
         Validate.notNull(children, "Children collection to be inserted must not be null.");
         int currentSize = childNodeSize();
-        if (index < 0) index += currentSize +1; // roll around
+        if (index < 0) index += currentSize +1; // roll around 
         Validate.isTrue(index >= 0 && index <= currentSize, "Insert position out of bounds.");
 
         addChildren(index, children);
