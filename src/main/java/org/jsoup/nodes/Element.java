@@ -293,7 +293,7 @@ public class Element extends Node {
             }
             shadowChildrenRef = new WeakReference<>(children);
         }
-        return children;
+        return children; 
     }
 
     /**
