@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -716,7 +716,7 @@ public class HttpConnection implements Connection {
             // set up the request for execution
             String mimeBoundary = null;
             if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
-                serialiseRequestUrl(req); 
+                serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
 
