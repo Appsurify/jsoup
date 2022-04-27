@@ -477,7 +477,7 @@ public class Element extends Node {
     public Element insertChildren(int index, Node... children) {
         Validate.notNull(children, "Children collection to be inserted must not be null.");
         int currentSize = childNodeSize();
-        if (index < 0) index += currentSize +1; // roll around 
+        if (index < 0) index += currentSize +1; // roll around
         Validate.isTrue(index >= 0 && index <= currentSize, "Insert position out of bounds.");
 
         addChildren(index, children);
@@ -1294,7 +1294,7 @@ public class Element extends Node {
         // otherwise, scan for whitespace and compare regions (with no string or arraylist allocations)
         boolean inClass = false;
         int start = 0;
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) { 
             if (Character.isWhitespace(classAttr.charAt(i))) {
                 if (inClass) {
                     // white space ends a class name, compare it with the requested one, ignore case
