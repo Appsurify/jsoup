@@ -235,7 +235,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      @param incoming attributes to add to these attributes.
      */
     public void addAll(Attributes incoming) {
-        if (incoming.size() == 0)
+        if (incoming.size() == 0) 
             return;
         checkCapacity(size + incoming.size);
 
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this); 
+        return new Dataset(this);
     }
 
     /**
