@@ -31,7 +31,7 @@ abstract class LeafNode extends Node {
     }
 
     String coreValue() {
-        return attr(nodeName()); 
+        return attr(nodeName());
     }
 
     void coreValue(String value) {
