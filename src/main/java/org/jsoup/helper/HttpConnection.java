@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
@@ -759,7 +759,7 @@ public class HttpConnection implements Connection {
                 // check that we can handle the returned content type; if not, abort before fetching it
                 String contentType = res.contentType();
                 if (contentType != null
-                        && !req.ignoreContentType() 
+                        && !req.ignoreContentType()
                         && !contentType.startsWith("text/")
                         && !xmlContentTypeRxp.matcher(contentType).matches()
                         )
