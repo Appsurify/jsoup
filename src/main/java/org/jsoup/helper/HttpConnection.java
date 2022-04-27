@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
@@ -895,7 +895,7 @@ public class HttpConnection implements Connection {
             conn.setConnectTimeout(req.timeout());
             conn.setReadTimeout(req.timeout() / 2); // gets reduced after connection is made and status is read
 
-            if (req.sslSocketFactory() != null && conn instanceof HttpsURLConnection) 
+            if (req.sslSocketFactory() != null && conn instanceof HttpsURLConnection)
                 ((HttpsURLConnection) conn).setSSLSocketFactory(req.sslSocketFactory());
             if (req.method().hasBody())
                 conn.setDoOutput(true);
