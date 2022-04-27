@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
@@ -568,7 +568,7 @@ public abstract class Node implements Cloneable {
     public String outerHtml() {
         StringBuilder accum = StringUtil.borrowBuilder();
         outerHtml(accum);
-        return StringUtil.releaseBuilder(accum);
+        return StringUtil.releaseBuilder(accum); 
     }
 
     protected void outerHtml(Appendable accum) {
