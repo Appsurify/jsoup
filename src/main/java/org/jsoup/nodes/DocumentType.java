@@ -71,7 +71,7 @@ public class DocumentType extends LeafNode {
         attr(SYSTEM_ID, systemId);
     }
     public void setPubSysKey(String value) {
-        if (value != null) 
+        if (value != null)
             attr(PUB_SYS_KEY, value);
     }
 
@@ -92,7 +92,7 @@ public class DocumentType extends LeafNode {
             accum.append(" ").append(attr(NAME));
         if (has(PUB_SYS_KEY))
             accum.append(" ").append(attr(PUB_SYS_KEY));
-        if (has(PUBLIC_ID))
+        if (has(PUBLIC_ID)) 
             accum.append(" \"").append(attr(PUBLIC_ID)).append('"');
         if (has(SYSTEM_ID))
             accum.append(" \"").append(attr(SYSTEM_ID)).append('"');
