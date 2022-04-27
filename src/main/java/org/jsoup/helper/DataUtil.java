@@ -149,7 +149,7 @@ public final class DataUtil {
                 foundCharset = foundCharset.trim().replaceAll("[\"']", "");
                 charsetName = foundCharset;
                 doc = null;
-            } else if (!fullyRead) {
+            } else if (!fullyRead) { 
                 doc = null;
             }
         } else { // specified by content type header (or by user on file load)
