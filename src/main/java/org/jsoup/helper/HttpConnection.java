@@ -913,7 +913,7 @@ public class HttpConnection implements Connection {
          * Call on completion of stream read, to close the body (or error) stream
          */
         private void safeClose() {
-            if (conn != null) { 
+            if (conn != null) {
                 conn.disconnect();
                 conn = null;
             }
@@ -1086,7 +1086,7 @@ public class HttpConnection implements Connection {
                 sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                 // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
             }
-            return StringUtil.releaseBuilder(sb);
+            return StringUtil.releaseBuilder(sb); 
         }
 
         // for get url reqs, serialise the data map into the url
