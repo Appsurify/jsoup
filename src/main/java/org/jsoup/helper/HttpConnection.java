@@ -412,7 +412,7 @@ public class HttpConnection implements Connection {
 
                 // UTF-8 leading:
                 if ((o & 0xE0) == 0xC0) {
-                    end = i + 1; 
+                    end = i + 1;
                 } else if ((o & 0xF0) == 0xE0) {
                     end = i + 2;
                 } else if ((o & 0xF8) == 0xF0) {
@@ -508,7 +508,7 @@ public class HttpConnection implements Connection {
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            Validate.notEmpty(name, "Cookie name must not be empty"); 
             Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
