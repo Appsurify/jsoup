@@ -398,7 +398,7 @@ public class HttpConnection implements Connection {
         private static boolean looksLikeUtf8(byte[] input) {
             int i = 0;
             // BOM:
-            if (input.length >= 3 && (input[0] & 0xFF) == 0xEF
+            if (input.length >= 3 && (input[0] & 0xFF) == 0xEF 
                 && (input[1] & 0xFF) == 0xBB & (input[2] & 0xFF) == 0xBF) {
                 i = 3;
             }
@@ -1086,7 +1086,7 @@ public class HttpConnection implements Connection {
                 sb.append(cookie.getKey()).append('=').append(cookie.getValue());
                 // todo: spec says only ascii, no escaping / encoding defined. validate on set? or escape somehow here?
             }
-            return StringUtil.releaseBuilder(sb); 
+            return StringUtil.releaseBuilder(sb);
         }
 
         // for get url reqs, serialise the data map into the url
