@@ -266,14 +266,14 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
      * Remove (delete) this node from the DOM tree. If this node has children, they are also removed.
      */
     public void remove() {
-        Validate.notNull(parentNode);
+        Validate.notNull(parentNode); 
         parentNode.removeChild(this);
     }
 
