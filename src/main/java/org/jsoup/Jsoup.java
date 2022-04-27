@@ -132,7 +132,7 @@ public class Jsoup {
      @throws IOException if the file could not be found, or read, or if the charsetName is invalid.
      */
     public static Document parse(InputStream in, String charsetName, String baseUri, Parser parser) throws IOException {
-        return DataUtil.load(in, charsetName, baseUri, parser);
+        return DataUtil.load(in, charsetName, baseUri, parser); 
     }
 
     /**
