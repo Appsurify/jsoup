@@ -43,7 +43,7 @@ public class Comment extends LeafNode {
     }
 
 	void outerHtmlHead(Appendable accum, int depth, Document.OutputSettings out) throws IOException {
-        if (out.prettyPrint())
+        if (out.prettyPrint()) 
             indent(accum, depth, out);
         accum
                 .append("<!--")
