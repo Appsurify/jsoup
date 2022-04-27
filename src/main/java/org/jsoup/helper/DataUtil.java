@@ -149,7 +149,7 @@ public final class DataUtil {
                 foundCharset = foundCharset.trim().replaceAll("[\"']", "");
                 charsetName = foundCharset;
                 doc = null;
-            } else if (!fullyRead) {
+            } else if (!fullyRead) { 
                 doc = null;
             }
         } else { // specified by content type header (or by user on file load)
@@ -242,7 +242,7 @@ public final class DataUtil {
         final Buffer buffer = byteData; // .mark and rewind used to return Buffer, now ByteBuffer, so cast for backward compat
         buffer.mark();
         byte[] bom = new byte[4];
-        if (byteData.remaining() >= bom.length) { 
+        if (byteData.remaining() >= bom.length) {
             byteData.get(bom);
             buffer.rewind();
         }
