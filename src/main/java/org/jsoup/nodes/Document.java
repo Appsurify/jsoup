@@ -444,7 +444,7 @@ public class Document extends Element {
         CharsetEncoder prepareEncoder() {
             // created at start of OuterHtmlVisitor so each pass has own encoder, so OutputSettings can be shared among threads
             CharsetEncoder encoder = charset.newEncoder();
-            encoderThreadLocal.set(encoder); 
+            encoderThreadLocal.set(encoder);
             coreCharset = Entities.CoreCharset.byName(encoder.charset().name());
             return encoder;
         }
