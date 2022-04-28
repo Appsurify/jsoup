@@ -219,7 +219,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      @return true if key exists, false otherwise
      */
     public boolean hasKeyIgnoreCase(String key) {
-        return indexOfKeyIgnoreCase(key) != NotFound;
+        return indexOfKeyIgnoreCase(key) != NotFound; 
     }
 
     /**
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this); 
+        return new Dataset(this);
     }
 
     /**
