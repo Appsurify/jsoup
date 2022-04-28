@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
@@ -347,7 +347,7 @@ public abstract class Node implements Cloneable {
         Element context = parent() instanceof Element ? (Element) parent() : null;
         List<Node> wrapChildren = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
         Node wrapNode = wrapChildren.get(0);
-        if (!(wrapNode instanceof Element)) // nothing to wrap with; noop
+        if (!(wrapNode instanceof Element)) // nothing to wrap with; noop 
             return null;
 
         Element wrap = (Element) wrapNode;
