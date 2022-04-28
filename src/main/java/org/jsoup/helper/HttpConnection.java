@@ -433,7 +433,7 @@ public class HttpConnection implements Connection {
         }
 
         public T header(String name, String value) {
-            Validate.notEmpty(name, "Header name must not be empty"); 
+            Validate.notEmpty(name, "Header name must not be empty");
             removeHeader(name); // ensures we don't get an "accept-encoding" and a "Accept-Encoding"
             addHeader(name, value);
             return (T) this;
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
