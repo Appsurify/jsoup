@@ -356,7 +356,7 @@ public class HttpConnection implements Connection {
             List<String> vals = getHeadersCaseInsensitive(name);
             if (vals.size() > 0) {
                 // https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
-                return StringUtil.join(vals, ", "); 
+                return StringUtil.join(vals, ", ");
             }
 
             return null;
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
