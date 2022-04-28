@@ -149,7 +149,7 @@ public final class DataUtil {
                 foundCharset = foundCharset.trim().replaceAll("[\"']", "");
                 charsetName = foundCharset;
                 doc = null;
-            } else if (!fullyRead) {
+            } else if (!fullyRead) { 
                 doc = null;
             }
         } else { // specified by content type header (or by user on file load)
@@ -246,7 +246,7 @@ public final class DataUtil {
             byteData.get(bom);
             buffer.rewind();
         }
-        if (bom[0] == 0x00 && bom[1] == 0x00 && bom[2] == (byte) 0xFE && bom[3] == (byte) 0xFF || // BE 
+        if (bom[0] == 0x00 && bom[1] == 0x00 && bom[2] == (byte) 0xFE && bom[3] == (byte) 0xFF || // BE
             bom[0] == (byte) 0xFF && bom[1] == (byte) 0xFE && bom[2] == 0x00 && bom[3] == 0x00) { // LE
             return new BomCharset("UTF-32", false); // and I hope it's on your system
         } else if (bom[0] == (byte) 0xFE && bom[1] == (byte) 0xFF || // BE
