@@ -83,7 +83,7 @@ public final class StringUtil {
      * @return if string is blank
      */
     public static boolean isBlank(String string) {
-        if (string == null || string.length() == 0)
+        if (string == null || string.length() == 0) 
             return true;
 
         int l = string.length();
