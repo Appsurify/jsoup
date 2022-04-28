@@ -98,7 +98,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      */
     public String get(String key) {
         int i = indexOfKey(key);
-        return i == NotFound ? EmptyString : checkNotNull(vals[i]); 
+        return i == NotFound ? EmptyString : checkNotNull(vals[i]);
     }
 
     /**
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
