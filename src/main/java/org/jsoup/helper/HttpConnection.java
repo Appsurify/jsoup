@@ -496,7 +496,7 @@ public class HttpConnection implements Connection {
         private Map.Entry<String, List<String>> scanHeaders(String name) {
             String lc = lowerCase(name);
             for (Map.Entry<String, List<String>> entry : headers.entrySet()) {
-                if (lowerCase(entry.getKey()).equals(lc)) 
+                if (lowerCase(entry.getKey()).equals(lc))
                     return entry;
             }
             return null;
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
