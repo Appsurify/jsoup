@@ -153,7 +153,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      */
     public Attributes put(String key, boolean value) {
         if (value)
-            putIgnoreCase(key, null); 
+            putIgnoreCase(key, null);
         else
             remove(key);
         return this;
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
