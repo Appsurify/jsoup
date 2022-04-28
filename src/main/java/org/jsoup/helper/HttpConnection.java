@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
@@ -769,7 +769,7 @@ public class HttpConnection implements Connection {
                 // switch to the XML parser if content type is xml and not parser not explicitly set
                 if (contentType != null && xmlContentTypeRxp.matcher(contentType).matches()) {
                     // only flip it if a HttpConnection.Request (i.e. don't presume other impls want it):
-                    if (req instanceof HttpConnection.Request && !((Request) req).parserDefined) { 
+                    if (req instanceof HttpConnection.Request && !((Request) req).parserDefined) {
                         req.parser(Parser.xmlParser());
                     }
                 }
