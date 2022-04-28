@@ -490,7 +490,7 @@ public class HttpConnection implements Connection {
                     return entry.getValue();
             }
 
-            return Collections.emptyList(); 
+            return Collections.emptyList();
         }
 
         private Map.Entry<String, List<String>> scanHeaders(String name) {
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
