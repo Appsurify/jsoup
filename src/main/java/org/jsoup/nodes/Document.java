@@ -94,7 +94,7 @@ public class Document extends Element {
     public void title(String title) {
         Validate.notNull(title);
         Element titleEl = getElementsByTag("title").first();
-        if (titleEl == null) { // add to head
+        if (titleEl == null) { // add to head 
             head().appendElement("title").text(title);
         } else {
             titleEl.text(title);
@@ -446,7 +446,7 @@ public class Document extends Element {
             CharsetEncoder encoder = charset.newEncoder();
             encoderThreadLocal.set(encoder);
             coreCharset = Entities.CoreCharset.byName(encoder.charset().name());
-            return encoder; 
+            return encoder;
         }
 
         CharsetEncoder encoder() {
