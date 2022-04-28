@@ -73,7 +73,7 @@ abstract class LeafNode extends Node {
     @Override
     public String absUrl(String key) {
         ensureAttributes();
-        return super.absUrl(key); 
+        return super.absUrl(key);
     }
 
     @Override
