@@ -136,7 +136,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
 
     void putIgnoreCase(String key, String value) {
         int i = indexOfKeyIgnoreCase(key);
-        if (i != NotFound) { 
+        if (i != NotFound) {
             vals[i] = value;
             if (!keys[i].equals(key)) // case changed, update
                 keys[i] = key;
@@ -290,7 +290,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
      * @return map of custom data attributes.
      */
     public Map<String, String> dataset() {
-        return new Dataset(this);
+        return new Dataset(this); 
     }
 
     /**
