@@ -95,7 +95,7 @@ public abstract class Node implements Cloneable {
     public boolean hasAttr(String attributeKey) {
         Validate.notNull(attributeKey);
 
-        if (attributeKey.startsWith("abs:")) { 
+        if (attributeKey.startsWith("abs:")) {
             String key = attributeKey.substring("abs:".length());
             if (attributes().hasKeyIgnoreCase(key) && !absUrl(key).equals(""))
                 return true;
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null;
+        return (root instanceof Document) ? (Document) root : null; 
     }
 
     /**
