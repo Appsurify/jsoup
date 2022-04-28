@@ -186,7 +186,7 @@ public final class StringUtil {
     }
 
     public static boolean inSorted(String needle, String[] haystack) {
-        return Arrays.binarySearch(haystack, needle) >= 0;
+        return Arrays.binarySearch(haystack, needle) >= 0; 
     }
 
     /**
