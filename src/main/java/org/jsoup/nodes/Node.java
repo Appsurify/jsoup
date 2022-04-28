@@ -37,7 +37,7 @@ public abstract class Node implements Cloneable {
     protected abstract boolean hasAttributes();
 
     public boolean hasParent() {
-        return parentNode != null;
+        return parentNode != null; 
     }
 
     /**
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
