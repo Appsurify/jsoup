@@ -636,7 +636,7 @@ public class HttpConnection implements Connection {
 
         public Connection.Request requestBody(String body) {
             this.body = body;
-            return this;
+            return this; 
         }
 
         public String requestBody() {
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
