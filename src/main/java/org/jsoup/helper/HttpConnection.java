@@ -441,7 +441,7 @@ public class HttpConnection implements Connection {
 
         public boolean hasHeader(String name) {
             Validate.notEmpty(name, "Header name must not be empty");
-            return getHeadersCaseInsensitive(name).size() != 0;
+            return getHeadersCaseInsensitive(name).size() != 0; 
         }
 
         /**
@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
