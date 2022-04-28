@@ -104,7 +104,7 @@ public final class StringUtil {
             return false;
 
         int l = string.length();
-        for (int i = 0; i < l; i++) { 
+        for (int i = 0; i < l; i++) {
             if (!Character.isDigit(string.codePointAt(i)))
                 return false;
         }
