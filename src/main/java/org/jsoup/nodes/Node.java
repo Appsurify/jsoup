@@ -100,7 +100,7 @@ public abstract class Node implements Cloneable {
             if (attributes().hasKeyIgnoreCase(key) && !absUrl(key).equals(""))
                 return true;
         }
-        return attributes().hasKeyIgnoreCase(attributeKey);
+        return attributes().hasKeyIgnoreCase(attributeKey); 
     }
 
     /**
@@ -266,7 +266,7 @@ public abstract class Node implements Cloneable {
      */
     public Document ownerDocument() {
         Node root = root();
-        return (root instanceof Document) ? (Document) root : null; 
+        return (root instanceof Document) ? (Document) root : null;
     }
 
     /**
