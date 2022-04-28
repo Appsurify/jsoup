@@ -86,7 +86,7 @@ public class Attribute implements Map.Entry<String, String>, Cloneable  {
      */
     public String setValue(String val) {
         String oldVal = this.val;
-        if (parent != null) { 
+        if (parent != null) {
             oldVal = parent.get(this.key); // trust the container more
             int i = parent.indexOfKey(this.key);
             if (i != Attributes.NotFound)
@@ -185,7 +185,7 @@ public class Attribute implements Map.Entry<String, String>, Cloneable  {
     @Override
     public boolean equals(Object o) { // note parent not considered
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) return false; 
         Attribute attribute = (Attribute) o;
         if (key != null ? !key.equals(attribute.key) : attribute.key != null) return false;
         return val != null ? val.equals(attribute.val) : attribute.val == null;
