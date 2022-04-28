@@ -72,7 +72,7 @@ public final class StringUtil {
         if (width < padding.length)
             return padding[width];
         char[] out = new char[width];
-        for (int i = 0; i < width; i++)
+        for (int i = 0; i < width; i++) 
             out[i] = ' ';
         return String.valueOf(out);
     }
