@@ -746,7 +746,7 @@ public class Element extends Node {
     public Element firstElementSibling() {
         // todo: should firstSibling() exclude this?
         List<Element> siblings = parent().childElementsList();
-        return siblings.size() > 1 ? siblings.get(0) : null;
+        return siblings.size() > 1 ? siblings.get(0) : null; 
     }
     
     /**
@@ -1294,7 +1294,7 @@ public class Element extends Node {
         // otherwise, scan for whitespace and compare regions (with no string or arraylist allocations)
         boolean inClass = false;
         int start = 0;
-        for (int i = 0; i < len; i++) { 
+        for (int i = 0; i < len; i++) {
             if (Character.isWhitespace(classAttr.charAt(i))) {
                 if (inClass) {
                     // white space ends a class name, compare it with the requested one, ignore case
