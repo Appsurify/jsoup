@@ -49,7 +49,7 @@ public class HtmlToPlainText {
             }
         } else { // format the whole doc
             String plainText = formatter.getPlainText(doc);
-            System.out.println(plainText);
+            System.out.println(plainText); 
         }
     }
 
@@ -101,7 +101,7 @@ public class HtmlToPlainText {
                     (accum.length() == 0 || StringUtil.in(accum.substring(accum.length() - 1), " ", "\n")))
                 return; // don't accumulate long runs of empty spaces
 
-            if (text.length() + width > maxWidth) { // won't fit, needs to wrap 
+            if (text.length() + width > maxWidth) { // won't fit, needs to wrap
                 String words[] = text.split("\\s+");
                 for (int i = 0; i < words.length; i++) {
                     String word = words[i];
