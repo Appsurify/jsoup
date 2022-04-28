@@ -715,7 +715,7 @@ public class HttpConnection implements Connection {
 
             // set up the request for execution
             String mimeBoundary = null;
-            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody)) 
+            if (req.data().size() > 0 && (!methodHasBody || hasRequestBody))
                 serialiseRequestUrl(req);
             else if (methodHasBody)
                 mimeBoundary = setOutputContentType(req);
@@ -1056,7 +1056,7 @@ public class HttpConnection implements Connection {
                 w.write("--");
             } else if (req.requestBody() != null) {
                 // data will be in query string, we're sending a plaintext body
-                w.write(req.requestBody());
+                w.write(req.requestBody()); 
             }
             else {
                 // regular form data (application/x-www-form-urlencoded)
