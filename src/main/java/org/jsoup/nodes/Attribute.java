@@ -179,13 +179,13 @@ public class Attribute implements Map.Entry<String, String>, Cloneable  {
      * Checks if this attribute name is defined as a boolean attribute in HTML5
      */
     protected static boolean isBooleanAttribute(final String key) {
-        return Arrays.binarySearch(booleanAttributes, key) >= 0;
+        return Arrays.binarySearch(booleanAttributes, key) >= 0; 
     }
 
     @Override
     public boolean equals(Object o) { // note parent not considered
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false; 
+        if (o == null || getClass() != o.getClass()) return false;
         Attribute attribute = (Attribute) o;
         if (key != null ? !key.equals(attribute.key) : attribute.key != null) return false;
         return val != null ? val.equals(attribute.val) : attribute.val == null;
