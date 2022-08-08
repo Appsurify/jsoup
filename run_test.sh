@@ -1,6 +1,6 @@
 echo "Starting the script"
 
-n_commit=1
+n_commit=200
 
 apiKey="MTpEbzhXQThOaW14bHVQTVdZZXNBTTVLT0xhZ00"
 #fileName="/f/professional/projects/java/appsurify/jsoup/target/surefire-reports/TEST-org.jsoup.helper.DataUtilTest.xml"
@@ -18,7 +18,7 @@ do
     echo "branch" >> console.log
     echo $j >> console.log
 	git checkout $j
-    for i in `git log -n $n_commit | grep commit | cut -d " " -f2`
+    for i in `git log -n $n_commit --reverse | grep commit | cut -d " " -f2`
     do
       echo $i >> console.log
 	  commitId=$i
