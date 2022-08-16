@@ -17,12 +17,12 @@ for j in `git branch -r | grep origin | grep -v HEAD`
 do
     echo "branch" >> console.log
     echo $j >> console.log
-	git checkout $j
+	git checkout $j -f
     for i in `git log -n $n_commit --reverse | grep commit | cut -d " " -f2`
     do
       echo $i >> console.log
 	  commitId=$i
-      git checkout $i
+      git checkout $i -f
 
       echo "running test" >> console.log
       C:/apache/apache-maven-3.5.0/bin/mvn test
