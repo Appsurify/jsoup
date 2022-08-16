@@ -25,7 +25,7 @@ do
       git checkout $i -f
 
       echo "running test" >> console.log
-      C:/apache/apache-maven-3.5.0/bin/mvn test
+      mvn test
 
 	  echo "push test results to api server" >> console.log
 	  
