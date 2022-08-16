@@ -1,0 +1,81 @@
+branch
+origin/Mutations
+af76ef2e60b7494d45260a1444102c8cb198d2dc
+running test
+push test results to api server
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.DataUtilTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.HttpConnectionTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.W3CDomTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.ConnectTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.ParseTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.UrlConnectTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.internal.ConstrainableInputStreamTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.internal.StringUtilTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.AttributesTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.AttributeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.DocumentTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.DocumentTypeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.ElementTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.EntitiesTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.FormElementTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.NodeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.TextNodeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.AttributeParseTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.CharacterReaderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlTreeBuilderStateTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlTreeBuilderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.ParserSettingsTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.ParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TagTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokeniserStateTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokeniserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokenQueueTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.XmlTreeBuilderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.safety.CleanerTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.CssTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.ElementsTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.QueryParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.SelectorTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.TraversorTest.xml
+cdf2841506ffb533370adb17d1395b243b8f3db9
+running test
+push test results to api server
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.DataUtilTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.HttpConnectionTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.helper.W3CDomTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.ConnectTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.ParseTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.integration.UrlConnectTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.internal.ConstrainableInputStreamTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.internal.StringUtilTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.AttributesTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.AttributeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.DocumentTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.DocumentTypeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.ElementTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.EntitiesTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.FormElementTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.NodeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.nodes.TextNodeTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.AttributeParseTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.CharacterReaderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlTreeBuilderStateTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.HtmlTreeBuilderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.ParserSettingsTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.ParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TagTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokeniserStateTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokeniserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.TokenQueueTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.parser.XmlTreeBuilderTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.safety.CleanerTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.CssTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.ElementsTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.QueryParserTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.SelectorTest.xml
+call api for ./target/surefire-reports/TEST-org.jsoup.select.TraversorTest.xml
+11d6fb9f5712761f864f857f195f764af0be5212
+running test
+push test results to api server
